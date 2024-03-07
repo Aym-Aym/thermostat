@@ -11,9 +11,9 @@ if __name__ == "__main__":
     app = QGuiApplication(sys.argv)
     format = QSurfaceFormat()
     format.setSamples(8)
-    QSurfaceFormat().setDefaultFormat(format)
+    QSurfaceFormat.setDefaultFormat(format)
     engine = QQmlApplicationEngine()
-    engine.load(os.fspath(Path(__file__).resolve().parent / "main.qml"))
+    engine.load(os.fspath(Path(__file__).resolve().parent / "qml/main.qml"))
     if not engine.rootObjects():
         sys.exit(-1)
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

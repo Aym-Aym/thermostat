@@ -1,0 +1,15 @@
+{
+    "files": [
+        "images/widget_ac_bg.svg",
+        "main.py",
+        "qml/components/CircularSlider.qml",
+        "qml/components/CursorRoundButton.qml",
+        "qml/components/DropWidget.qml",
+        "qml/main.qml",
+        "qml/widgets/server_status/ServerStatus.qml",
+        "qml/widgets/thermostat/Thermostat.qml",
+        "qml/widgets/weather/Weather.qml",
+        "qml/widgets/xxxxxLocalWidget.qml",
+        "qml/widgets/xxxxxThermostat.qml"
+    ]
+}
