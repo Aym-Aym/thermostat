@@ -5,7 +5,7 @@ import requests
 
 
 class NestThermostat():
-    """"""
+    """Class to query the nest Thermostat API."""
     def __init__(self):
         self.request_url = "https://smartdevicemanagement.googleapis.com/v1/enterprises"
         self.__token = NestOauthToken()
@@ -26,7 +26,15 @@ class NestThermostat():
 
         return headers
 
-    def query(self, query_type) -> Dict:
+    def query(self, query_type: str) -> Dict:
+        """Query the Nest Thermostat API.
+        
+        Args:
+            query_type (str) Type of query needed.
+
+        Returns:
+            Dict: API response.
+        """
         headers = self.__get_headers()
         query_url = self.get_query_url(query_type=query_type)
 

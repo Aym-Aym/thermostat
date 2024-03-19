@@ -10,6 +10,7 @@ class NestOauthToken():
     date.
     """
     def __init__(self) -> None:
+        """Initialize NestOAuthToken class."""
         self.token_url = "https://www.googleapis.com/oauth2/v4/token"
 
         config_datas = self.__get_json_datas("config.json")
@@ -78,7 +79,7 @@ class NestOauthToken():
 
         Args:
             json_file_path (str): Path to the json config file.
-            json_datas (Dict): .
+            json_datas (Dict): Token informations.
         """
         json_datas = json.dumps(datas, indent=4)
 
