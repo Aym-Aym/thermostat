@@ -15,11 +15,8 @@ class ServerControlWidget:
         """
         self.ssh_server = ssh_server
 
-    def get_status(self, timeout: int = 15) -> bool:
+    def get_status(self) -> bool:
         """Check server status.
-
-        Args:
-            timeout (int): Time in second before timing out.
 
         Returns:
             bool: True if server is online, else False.
